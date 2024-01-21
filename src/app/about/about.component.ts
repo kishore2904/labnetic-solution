@@ -1,20 +1,28 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ServicesComponent } from '../services/services.component';
+interface Paragraph {
+  content: string;
+  visible: boolean;
+}
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [CommonModule,ServicesComponent],
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css','./about.componentpart2.css','./mediaqueries.css']
+  styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  toggleMenu(): void {
-    const menu: HTMLElement | null = document.querySelector(".menu-links");
-    const icon: HTMLElement | null = document.querySelector(".hamburger-icon");
-
-    if (menu && icon) {
-      menu.classList.toggle("open");
-      icon.classList.toggle("open");
-    }
+  show = false;
+  close = true;
+  toggleParagraphs(){
+    this.close = !this.close;
+    this.show = !this.show;
   }
+  toggleParagraphsClose(){
+    this.close = !this.close;
+    this.show = !this.show;
+  }
+  
 }

@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../shared/header/header.component';
 import { AboutComponent } from '../about/about.component';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent,AboutComponent],
+  imports: [HeaderComponent,AboutComponent,FooterComponent],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css','./home.componentpart2.css','./mediaqueries.css']
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
   toggleMenu(): void {

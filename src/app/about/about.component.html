@@ -1,0 +1,20 @@
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Us</h1>
+    <div class="section-container">
+     
+      <div class="about-details-container">
+        
+        <div class="text-container">
+          <p class="text-container-fixed">Welcome to Labnetic Solutions, a trailblazing tech startup that embarked on its journey in 2020, dedicated to shaping the digital landscape with innovation and expertise. Over the years, we have evolved into a powerhouse of technology services, specializing in web development, 3D modeling, and cybersecurity.</p>
+          <div *ngIf="show">
+            <p>In 2020, Labnetic Solutions was founded with a vision to pioneer technological advancements and redefine the way businesses and individuals engage with the digital world. From our humble beginnings, we have grown into a dynamic team of tech enthusiasts, fueled by the passion to create impactful solutions.</p>
+          </div>
+          <button *ngIf="close"class="know-more-button"(click)="toggleParagraphs()">Show More</button>
+          <button *ngIf="show" class="know-more-button"(click)="toggleParagraphsClose()">Show Less</button>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+ <app-services></app-services>
