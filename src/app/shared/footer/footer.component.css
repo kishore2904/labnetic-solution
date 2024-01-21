@@ -7,7 +7,7 @@ footer{
     background-color: #111;
 }
 .footerContainer{
-    margin-top: 200px;
+    margin-top: 400px;
     width: 100%;
     padding: 70px 30px 20px;
 }
@@ -64,10 +64,10 @@ footer{
     color: grey;
 }
 
-
-
-
 @media screen and (max-width: 700px) {
+    .footerContainer{
+        margin-top: 10px;
+    }
     .footerNav ul{
         flex-direction: column;
     }
