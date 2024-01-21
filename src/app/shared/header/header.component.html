@@ -1,29 +1,29 @@
-  <div class="body">
-    <nav id="desktop-nav">
-      <div class="logo">Labnetic Solutions</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Courses</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
+<div class="body">
+  <nav id="desktop-nav">
+    <div class="logo">Labnetic Solutions</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Courses</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Labnetic Solutions</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Labnetic Solutions</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" (click)="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" (click)="toggleMenu()">About</a></li>
-          <li><a href="#services" (click)="toggleMenu()">Services</a></li>
-          <li><a href="#pricing" (click)="toggleMenu()">Courses</a></li>
-          <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" (click)="toggleMenu()">About</a></li>
+        <li><a href="#services" (click)="toggleMenu()">Services</a></li>
+        <li><a href="#pricing" (click)="toggleMenu()">Courses</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+</div>
